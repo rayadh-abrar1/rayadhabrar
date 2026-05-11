@@ -3,77 +3,72 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
-  <title>Rayadh Abrar — EEE Student, IEEE Leader & Engineer</title>
-  <meta name="description" content="Rayadh Abrar is a B.Sc. EEE student at BRAC University, IEEE Student Branch Chairperson, and power systems researcher based in Dhaka, Bangladesh." />
-  <meta name="keywords" content="Rayadh Abrar, EEE, electrical engineering, BRAC University, IEEE, power systems, renewable energy, 5G, signal processing, Dhaka, Bangladesh" />
+  <title>Rayadh Abrar — EEE Student | IEEE Chairperson | Power Systems | Available for Hire</title>
+  <meta name="description" content="Rayadh Abrar — B.Sc. EEE at BRAC University, IEEE Student Branch Chairperson, Ulkasemi Campus Ambassador, power systems researcher, startup founder. Open to internships, MNC roles, and research collaborations." />
+  <meta name="keywords" content="Rayadh Abrar, EEE, electrical engineering, BRAC University, IEEE Chairperson, power systems, renewable energy, AI, VLSI, 5G, cybersecurity, Bangladesh, available for hire, campus ambassador, Ulkasemi, internship, MNC" />
   <meta name="author" content="Rayadh Abrar" />
   <meta name="robots" content="index, follow" />
-
-  <!-- Open Graph / Social Sharing -->
-  <meta property="og:title" content="Rayadh Abrar — EEE Student & IEEE Leader" />
-  <meta property="og:description" content="EEE undergrad at BRAC University. IEEE Student Branch Chairperson. Researcher in Power Systems & Telecommunications." />
+  <meta property="og:title" content="Rayadh Abrar — EEE Student & IEEE Leader | Available for Hire" />
+  <meta property="og:description" content="Emcee · IEEE Chairperson · Startup Founder · Campus Ambassador · Available for Hire" />
   <meta property="og:type" content="website" />
-  <meta property="og:url" content="https://rayadhabrar.github.io" />
-  <!-- <meta property="og:image" content="https://rayadhabrar.github.io/assets/og-image.jpg" /> -->
-
-  <!-- Twitter Card -->
+  <meta property="og:url" content="https://rayadh-abrar1.github.io/rayadhabrar/" />
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:title" content="Rayadh Abrar — EEE Student & IEEE Leader" />
-  <meta name="twitter:description" content="EEE undergrad at BRAC University. IEEE Student Branch Chairperson. Power Systems & Telecom researcher." />
-
-  <!-- Google Fonts -->
+  <meta name="twitter:description" content="· IEEE Chairperson · Startup Founder · Available for Hire" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,300&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
-
   <link rel="stylesheet" href="style.css" />
-
-  <!-- Structured Data for SEO -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
     "@type": "Person",
     "name": "Rayadh Abrar",
-    "url": "https://rayadhabrar.github.io",
-    "jobTitle": "EEE Student & IEEE Student Branch Chairperson",
+    "url": "https://rayadh-abrar1.github.io/rayadhabrar/",
+    "jobTitle": "EEE Student, IEEE Student Branch Chairperson",
     "alumniOf": "BRAC University",
-    "address": { "@type": "PostalAddress", "addressLocality": "Dhaka", "addressCountry": "BD" },
-    "sameAs": [
-      "https://linkedin.com/in/rayadh-abrar"
-    ]
+    "hasCredential": "B.Sc. Electrical & Electronics Engineering (GPA 3.8)",
+    "knowsAbout": ["Power Systems","Renewable Energy","5G Networks","VLSI","AI in Engineering","Cybersecurity","IEEE Standards","Semiconductor Design"],
+    "address": {"@type":"PostalAddress","addressLocality":"Dhaka","addressCountry":"BD"},
+    "sameAs": ["https://linkedin.com/in/rayadh-abrar"]
   }
   </script>
 </head>
 <body>
 
-  <!-- Custom Cursor (desktop only) -->
   <div class="cursor" id="cursor"></div>
   <div class="cursor-follower" id="cursorFollower"></div>
 
-  <!-- ===================== NAVIGATION ===================== -->
+  <!-- Hire Bar -->
+  <div class="hire-bar" id="hireBar">
+    <span class="hire-bar-dot"></span>
+    <span>Open to internships, MNC roles &amp; research collaborations — </span>
+    <a href="#contact" class="hire-bar-link">Let's talk →</a>
+    <button class="hire-bar-close" id="hireBarClose" aria-label="Close banner">✕</button>
+  </div>
+
+  <!-- NAV -->
   <nav id="navbar">
     <div class="nav-container">
       <a href="#hero" class="nav-logo">
         <span class="logo-bolt">⚡</span>
-        <!-- ✏️ Add your GitHub username to the href when ready -->
         <span>Rayadh Abrar</span>
       </a>
       <div class="nav-links" id="navLinks">
         <a href="#about"          class="nav-link">About</a>
-        <a href="#projects"       class="nav-link">Projects</a>
-        <a href="#extracurriculars" class="nav-link">Activities</a>
-        <a href="#tuitions"       class="nav-link">Tuitions</a>
+        <a href="#experience"     class="nav-link">Experience</a>
+        <a href="#research"       class="nav-link">Research</a>
         <a href="#blog"           class="nav-link">Blog</a>
-        <a href="#contact"        class="nav-link nav-cta">Contact</a>
+        <a href="tuitions.html"   class="nav-link">Tuitions ↗</a>
+        <a href="#contact"        class="nav-link nav-hire">Hire Me</a>
       </div>
-      <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation menu">
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
         <span></span><span></span><span></span>
       </button>
     </div>
   </nav>
 
-  <!-- ===================== HERO ===================== -->
+  <!-- HERO -->
   <section id="hero" class="hero">
     <div class="hero-bg-grid" aria-hidden="true"></div>
     <div class="circuit-deco" aria-hidden="true">
@@ -83,95 +78,87 @@
       <div class="c-node" style="top:68%;left:58%;animation-delay:1.2s"></div>
       <div class="c-node" style="top:16%;right:28%;animation-delay:2.4s"></div>
     </div>
-
     <div class="hero-content">
       <div class="hero-badge reveal">
         <span class="badge-pulse"></span>
-        <span>IEEE Member · ID 100291890 · Open to opportunities</span>
+        <span>Available for Hire · IEEE Member #100291890</span>
       </div>
-
       <h1 class="hero-title reveal">
         Hi, I'm<br />
         <span class="hero-name" id="heroName">Rayadh Abrar</span>
       </h1>
-
       <p class="hero-subtitle reveal">
-        EEE Undergrad @ <strong>BRAC University</strong><br />
+        EEE Undergrad @ <strong>BRAC University</strong> · <span class="cgpa-highlight">3.8 CGPA</span><br />
         Passionate about <span class="typed-out" id="typedText"></span><span class="typed-cursor" aria-hidden="true">|</span>
       </p>
-
       <p class="hero-desc reveal">
-        Bridging the gap between engineering theory and industrial application —
-        from national grid research and 5G architecture to leading 50+ volunteers
-        across IEEE initiatives with 20,000+ engagements.
+        IEEE Branch Chairperson · Ulkasemi Campus Ambassador · National Programme Manager · Startup Founder.
+        Combining deep technical expertise in Power Systems with elite cross-sector leadership — bridging engineering and strategic impact at scale.
       </p>
-
       <div class="hero-actions reveal">
-        <a href="#projects" class="btn btn-primary">
-          View Projects
-          <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        <a href="#contact" class="btn btn-primary">
+          Hire Me
+          <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
         </a>
-        <a href="#contact"   class="btn btn-outline">Get in Touch</a>
-        <a href="assets/resume.pdf" target="_blank" rel="noopener" class="btn btn-ghost">Resume ↗</a>
+        <a href="#experience" class="btn btn-outline">View Experience</a>
+        <a href="assets/Rayadh%20Abrar%27s%20Resume.pdf" target="_blank" rel="noopener" class="btn btn-ghost">Resume ↗</a>
       </div>
-
       <div class="hero-stats reveal">
         <div class="stat-item">
-          <span class="stat-num" data-target="5">0</span>
-          <span class="stat-lbl">Leadership Roles</span>
+          <div class="stat-num-wrap"><span class="stat-num" data-target="38" data-divide="10">0</span><span class="stat-dec">/4.0</span></div>
+          <span class="stat-lbl">CGPA</span>
         </div>
-        <div class="stat-sep" aria-hidden="true"></div>
+        <div class="stat-sep"></div>
         <div class="stat-item">
-          <span class="stat-num" data-target="50">0</span>
+          <div class="stat-num-wrap"><span class="stat-num" data-target="50">0</span><span class="stat-dec">+</span></div>
           <span class="stat-lbl">Volunteers Led</span>
         </div>
-        <div class="stat-sep" aria-hidden="true"></div>
+        <div class="stat-sep"></div>
         <div class="stat-item">
-          <span class="stat-num" data-target="300">0</span>
+          <div class="stat-num-wrap"><span class="stat-num" data-target="300">0</span><span class="stat-dec">+</span></div>
           <span class="stat-lbl">Event Attendees</span>
         </div>
+        <div class="stat-sep"></div>
+        <div class="stat-item">
+          <div class="stat-num-wrap"><span class="stat-num" data-target="36">0</span><span class="stat-dec">mo+</span></div>
+          <span class="stat-lbl">Teaching Exp.</span>
+        </div>
       </div>
-    </div><!-- /.hero-content -->
-
+    </div>
     <div class="hero-visual reveal" aria-hidden="true">
       <div class="code-card">
         <div class="code-card-bar">
           <div class="traffic-lights">
-            <span class="tl tl-red"></span>
-            <span class="tl tl-yellow"></span>
-            <span class="tl tl-green"></span>
+            <span class="tl tl-red"></span><span class="tl tl-yellow"></span><span class="tl tl-green"></span>
           </div>
-          <span class="code-filename">circuit.ino</span>
+          <span class="code-filename">rayadh.json</span>
         </div>
         <div class="code-body">
-          <div class="cl"><span class="ck">void</span> <span class="cf">setup</span>() {</div>
-          <div class="cl pad"><span class="cf">pinMode</span>(LED_PIN, OUTPUT);</div>
-          <div class="cl pad"><span class="cf">Serial</span>.begin(<span class="cn">9600</span>);</div>
-          <div class="cl">}</div>
-          <div class="cl">&nbsp;</div>
-          <div class="cl"><span class="ck">void</span> <span class="cf">loop</span>() {</div>
-          <div class="cl pad"><span class="cf">digitalWrite</span>(LED_PIN, HIGH);</div>
-          <div class="cl pad"><span class="cf">delay</span>(<span class="cn">1000</span>);</div>
-          <div class="cl pad"><span class="cf">digitalWrite</span>(LED_PIN, LOW);</div>
-          <div class="cl pad"><span class="cf">delay</span>(<span class="cn">1000</span>);</div>
-          <div class="cl">}</div>
+          <div class="cl"><span class="ck">{</span></div>
+          <div class="cl pad"><span class="cf">"role"</span>: <span class="cs">"IEEE Branch Chairperson"</span>,</div>
+          <div class="cl pad"><span class="cf">"cgpa"</span>: <span class="cn">3.8</span>,</div>
+          <div class="cl pad"><span class="cf">"focus"</span>: <span class="cs">"Power Systems"</span>,</div>
+          <div class="cl pad"><span class="cf">"interests"</span>: [<span class="cs">"AI"</span>, <span class="cs">"VLSI"</span>, <span class="cs">"5G"</span>],</div>
+          <div class="cl pad"><span class="cf">"ambassador"</span>: <span class="cs">"Ulkasemi"</span>,</div>
+          <div class="cl pad"><span class="cf">"status"</span>: <span class="cs">"open_to_hire"</span></div>
+          <div class="cl"><span class="ck">}</span></div>
         </div>
         <div class="code-card-foot">
           <span class="running-dot"></span>
-          <span>Running · Arduino Uno</span>
+          <span>Available · Let's build something</span>
         </div>
       </div>
       <div class="float-chips">
-        <span class="chip">⚡ Circuit Design</span>
-        <span class="chip" style="animation-delay:.8s">🔌 Embedded</span>
-        <span class="chip" style="animation-delay:1.6s">📡 Signals</span>
-        <span class="chip" style="animation-delay:2.4s">🔋 Power Sys.</span>
+        <span class="chip">⚡ Power Systems</span>
+        <span class="chip" style="animation-delay:.8s">🤖 AI / ML</span>
+        <span class="chip" style="animation-delay:1.6s">🔬 VLSI</span>
+        <span class="chip" style="animation-delay:2.4s">🔒 Cybersecurity</span>
       </div>
-    </div><!-- /.hero-visual -->
+    </div>
   </section>
 
 
-  <!-- ===================== ABOUT ===================== -->
+  <!-- ABOUT -->
   <section id="about" class="section">
     <div class="container">
       <div class="section-head">
@@ -179,179 +166,83 @@
         <h2 class="section-title reveal">A little bit about me</h2>
       </div>
       <div class="about-grid">
-
         <div class="about-left reveal">
           <div class="photo-frame">
-         
-            <img src="assets/Rayadh Picture.jpg" alt="Rayadh Abrar" />
-           
+            <img src="assets/Rayadh%20Picture.jpeg" alt="Rayadh Abrar — EEE Student & IEEE Chairperson, BRAC University" />
             <div class="photo-deco"></div>
           </div>
           <div class="skill-cloud">
             <span class="skill-pill">Power Systems</span>
             <span class="skill-pill">Renewable Energy</span>
-            <span class="skill-pill">High-Voltage Transmission</span>
+            <span class="skill-pill">AI &amp; Machine Learning</span>
+            <span class="skill-pill">VLSI Design</span>
             <span class="skill-pill">5G Architecture</span>
+            <span class="skill-pill">Cybersecurity</span>
             <span class="skill-pill">Signal Processing</span>
-            <span class="skill-pill">Semiconductors</span>
+            <span class="skill-pill">Stakeholder Management</span>
+            <span class="skill-pill">Programme Management</span>
+            <span class="skill-pill">Strategic Leadership</span>
             <span class="skill-pill">MATLAB</span>
-            <span class="skill-pill">Circuit Analysis</span>
-            <span class="skill-pill">IEEE Standards</span>
-            <span class="skill-pill">Project Management</span>
+            <span class="skill-pill">KPI Design</span>
           </div>
         </div>
-
         <div class="about-right reveal">
           <p class="about-lead">
-            I'm <strong>Rayadh Abrar</strong>, an EEE undergraduate at <strong>BRAC University</strong>
-            (2024–2028), currently serving as <strong>Chairperson of the IEEE BRAC University Student Branch</strong>
-            and Vice Chair (Tech) at the IEEE Computer Society Bangladesh Council.
+            I'm <strong>Rayadh Abrar</strong> — EEE undergraduate at <strong>BRAC University</strong> (2024–2028)
+            maintaining a <strong>good CGPA</strong>, currently serving as <strong>Chairperson of the IEEE BRAC University Student Branch</strong>,
+            <strong>Vice Chair (Tech) at IEEE Computer Society Bangladesh Council</strong>, and <strong>Campus Ambassador at Ulkasemi</strong>.
           </p>
           <p class="about-body">
-            My technical focus is on Power Systems — national grid stability, renewable energy integration,
-            and high-voltage transmission — alongside a deep interest in 5G network architecture and
-            AI-driven signal processing. I've led high-profile programs in partnership with the
-            World Bank, BHTPA, and the ICT Division, and maintain strong ties with BPDB, DESCO, and SREDA.
+            My technical research spans Power Systems, AI applications, VLSI semiconductor design and project management.
+            I'm particularly focused on Bangladesh's national grid stability challenges, renewable energy integration, and how
+            machine learning will reshape both power infrastructure and 5G network management.
           </p>
           <p class="about-body">
-            Beyond research, I'm a builder: I founded <strong>Project Kaizen</strong>, secured BDT 50,000
-            in startup seed funding, and have organised events reaching 300+ attendees — including the
-            inaugural <em>BYTE THE NEWS</em> tech publication and the IEEE Week &amp; PES seminar series.
-            I believe in bridging the gap between engineering theory and industrial application.
+            Beyond the lab, I've managed national-level programmes with the <strong>World Bank, BHTPA, and ICT Division</strong>,
+            led 50+ volunteer teams, driven 20,000+ community engagements, and founded <strong>Project Kaizen</strong> — securing
+            BDT 50,000 in seed funding. I hold 6 A*s at O Levels and 3 As at A Levels, and bring 36+ months of academic coaching experience.
           </p>
+          <div class="about-tags">
+            <span class="about-tag">📍 Dhaka, Bangladesh</span>
+            <span class="about-tag">🎓 BRAC University 2024–2028</span>
+            <span class="about-tag">⚡ IEEE #100291890</span>
+            <span class="about-tag">🌐 Open to Remote &amp; International Roles</span>
+          </div>
           <div class="about-links">
-            <a href="#extracurriculars" class="text-link">See my leadership roles →</a>
+            <a href="#experience" class="text-link">See full experience →</a>
             <a href="mailto:rayadh.abrar01@gmail.com" class="text-link">rayadh.abrar01@gmail.com →</a>
           </div>
         </div>
-
       </div>
     </div>
   </section>
 
 
-  <!-- ===================== PROJECTS ===================== -->
-  <section id="projects" class="section section-alt">
+  <!-- EXPERIENCE -->
+  <section id="experience" class="section section-alt">
     <div class="container">
       <div class="section-head">
-        <span class="section-tag">// 02. projects</span>
-        <h2 class="section-title reveal">Things I've built</h2>
-        <p class="section-desc reveal">A collection of EEE projects — from concept to circuit.</p>
-      </div>
-
-      <div class="filter-bar reveal">
-        <button class="filter-btn active" data-filter="all">All</button>
-        <button class="filter-btn" data-filter="circuits">Circuits</button>
-        <button class="filter-btn" data-filter="embedded">Embedded</button>
-        <button class="filter-btn" data-filter="software">Software</button>
-        <button class="filter-btn" data-filter="research">Research</button>
-      </div>
-
-      <div class="projects-grid" id="projectsGrid">
-
-        <!-- PROJECT 1 — Project Kaizen (real) -->
-        <article class="proj-card proj-featured reveal" data-category="research">
-          <div class="proj-badge">★ Featured</div>
-          <div class="proj-top">
-            <span class="proj-cat">Startup / Innovation</span>
-            <div class="proj-icons">
-              <a href="#" class="icon-link" title="Learn More" aria-label="Learn more">
-                <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15,3 21,3 21,9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
-              </a>
-            </div>
-          </div>
-          <h3 class="proj-title">Project Kaizen — UIHP Startup</h3>
-          <p class="proj-desc">Founded and pitched a tech startup under the UIHP Smart Unibator program, securing BDT 50,000 seed funding. Presented KPI design and innovation roadmap before the ICT Division jury panel.</p>
-          <div class="proj-tags">
-            <span class="tag">Startup</span><span class="tag">KPI Design</span>
-            <span class="tag">ICT Division</span><span class="tag">UIHP</span>
-          </div>
-        </article>
-
-        <!-- PROJECT 2 — Power Systems Research -->
-        <article class="proj-card reveal" data-category="research">
-          <div class="proj-top">
-            <span class="proj-cat">Power Systems</span>
-            <div class="proj-icons">
-              <a href="#" class="icon-link" title="GitHub" aria-label="GitHub repo">
-                <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg>
-              </a>
-            </div>
-          </div>
-          <h3 class="proj-title">National Grid Stability Analysis</h3>
-          <p class="proj-desc">Research into Bangladesh's national power grid stability, modelling renewable energy integration challenges and high-voltage transmission constraints using simulation tools.</p>
-          <div class="proj-tags">
-            <span class="tag">PSCAD</span><span class="tag">MATLAB</span>
-            <span class="tag">Renewable Energy</span><span class="tag">BPDB</span>
-          </div>
-        </article>
-
-        <!-- PROJECT 3 — 5G / Telecom -->
-        <article class="proj-card reveal" data-category="software">
-          <div class="proj-top">
-            <span class="proj-cat">Telecommunications</span>
-            <div class="proj-icons">
-              <a href="#" class="icon-link" title="GitHub" aria-label="GitHub repo">
-                <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg>
-              </a>
-            </div>
-          </div>
-          <h3 class="proj-title">5G Network Architecture Study</h3>
-          <p class="proj-desc">Explored 5G network architecture and AI-driven signal processing applications. Published findings in <em>BYTE THE NEWS</em>, the IEEE BRAC branch's inaugural tech publication.</p>
-          <div class="proj-tags">
-            <span class="tag">5G</span><span class="tag">AI / ML</span>
-            <span class="tag">Signal Processing</span><span class="tag">IEEE</span>
-          </div>
-        </article>
-
-        <!-- PROJECT 4 — Circuit / Embedded placeholder -->
-        <article class="proj-card reveal" data-category="circuits">
-          <div class="proj-top">
-            <span class="proj-cat">Circuit Design</span>
-            <div class="proj-icons">
-              <a href="#" class="icon-link" title="GitHub" aria-label="GitHub repo">
-                <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg>
-              </a>
-            </div>
-          </div>
-          <h3 class="proj-title">✏️ Add Your Circuit Project</h3>
-          <p class="proj-desc">Replace this card with a real project — a lab assignment, personal build, or BRAC course project. Add the GitHub link and a 2-line description.</p>
-          <div class="proj-tags">
-            <span class="tag">Coming Soon</span>
-          </div>
-        </article>
-
-      </div><!-- /.projects-grid -->
-
-      <div class="section-cta reveal">
-        <!-- ✏️ Your GitHub URL -->
-        <a href="https://github.com/yourusername" target="_blank" rel="noopener" class="btn btn-outline">View All on GitHub ↗</a>
-      </div>
-    </div>
-  </section>
-
-
-  <!-- ===================== EXTRACURRICULARS ===================== -->
-  <section id="extracurriculars" class="section">
-    <div class="container">
-      <div class="section-head">
-        <span class="section-tag">// 03. extracurriculars</span>
-        <h2 class="section-title reveal">Beyond the classroom</h2>
-        <p class="section-desc reveal">Clubs, competitions, and community work that shape who I am.</p>
+        <span class="section-tag">// 02. experience</span>
+        <h2 class="section-title reveal">Leadership &amp; Professional Experience</h2>
+        <p class="section-desc reveal">National-level programme management, cross-sector stakeholder engagement, and technical leadership — all while maintaining a 3.8 CGPA at BRAC University.</p>
       </div>
       <div class="timeline">
 
-        <!-- Real extracurricular roles from resume -->
         <div class="tl-item reveal">
           <div class="tl-dot">🏛️</div>
           <div class="tl-card">
             <div class="tl-head">
-              <h3 class="tl-title">Chairperson, IEEE BRAC University Student Branch</h3>
-              <span class="tl-pill">Leadership</span>
+              <h3 class="tl-title">Chairperson — IEEE BRAC University Student Branch</h3>
+              <span class="tl-pill">Current</span>
             </div>
-            <p class="tl-org">IEEE BRAC University Student Branch</p>
+            <p class="tl-org">IEEE · BRAC University</p>
             <p class="tl-period">Feb 2026 — Present</p>
-            <p class="tl-desc">Leading the full university branch ecosystem — managing cross-functional executive teams and 50+ active volunteers. Driving high-level stakeholder relations and VIP protocol with national entities including BPDB, DESCO, SREDA, and Ulkasemi.</p>
+            <p class="tl-desc">Leading the full branch ecosystem — managing cross-functional executive teams, 50+ active volunteers, faculty relations, and organisational assets. Driving high-level stakeholder engagement and VIP protocol with national entities including <strong>BPDB, DESCO, SREDA</strong>, and <strong>Ulkasemi</strong>. Overseeing strategic direction, budget allocation, and inter-university collaboration for one of Bangladesh's most active IEEE student branches.</p>
+            <div class="tl-metrics">
+              <span class="metric">50+ Volunteers</span>
+              <span class="metric">National Reach</span>
+              <span class="metric">BPDB · DESCO · SREDA</span>
+            </div>
           </div>
         </div>
 
@@ -359,12 +250,35 @@
           <div class="tl-dot">💻</div>
           <div class="tl-card">
             <div class="tl-head">
-              <h3 class="tl-title">Vice Chair (Tech), Secretariat Ex-Com</h3>
-              <span class="tl-pill">National</span>
+              <h3 class="tl-title">Vice Chair (Tech) — IEEE Computer Society BDC</h3>
+              <span class="tl-pill">Current</span>
             </div>
-            <p class="tl-org">IEEE Computer Society Bangladesh Council (BDC)</p>
+            <p class="tl-org">IEEE Computer Society · Bangladesh Council (Secretariat Ex-Com)</p>
             <p class="tl-period">Mar 2026 — Present</p>
-            <p class="tl-desc">Directing national technical initiatives bridging EEE hardware infrastructure with advanced computing (AI, VLSI, 5G). Collaborating with executives across top universities to curate high-impact, industry-aligned national seminars.</p>
+            <p class="tl-desc">Directing national technical initiatives at the intersection of EEE hardware infrastructure and advanced computing — AI, VLSI, and 5G. Collaborating with executives across Bangladesh's leading universities to design and deliver high-impact, industry-aligned national seminars and technical leadership programmes.</p>
+            <div class="tl-metrics">
+              <span class="metric">National Level</span>
+              <span class="metric">AI · VLSI · 5G</span>
+              <span class="metric">Multi-University</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="tl-item reveal">
+          <div class="tl-dot">🌐</div>
+          <div class="tl-card">
+            <div class="tl-head">
+              <h3 class="tl-title">Campus Ambassador — Ulkasemi</h3>
+              <span class="tl-pill">Current</span>
+            </div>
+            <p class="tl-org">Ulkasemi · BRAC University</p>
+            <p class="tl-period">2025 — Present</p>
+            <p class="tl-desc">Representing Ulkasemi's semiconductor and technology ecosystem at BRAC University. Facilitating connections between the student engineering community and Bangladesh's emerging semiconductor industry — bridging academic talent pipelines with cutting-edge industry opportunities in VLSI and chip design.</p>
+            <div class="tl-metrics">
+              <span class="metric">Semiconductors</span>
+              <span class="metric">Industry Pipeline</span>
+              <span class="metric">VLSI Ecosystem</span>
+            </div>
           </div>
         </div>
 
@@ -372,12 +286,17 @@
           <div class="tl-dot">📡</div>
           <div class="tl-card">
             <div class="tl-head">
-              <h3 class="tl-title">ComSoc Treasurer &amp; Event Organizer</h3>
-              <span class="tl-pill">Technical</span>
+              <h3 class="tl-title">IEEE Brac University ComSoc Chapter Treasurer &amp; Event Organizer — IEEE BRAC University</h3>
+              <span class="tl-pill">Ongoing</span>
             </div>
-            <p class="tl-org">IEEE BRAC University Student Branch</p>
+            <p class="tl-org">IEEE Communications Society · BRAC University Branch Chapter</p>
             <p class="tl-period">Jan 2025 — Present</p>
-            <p class="tl-desc">Directed the IEEE Week &amp; PES seminar series (300+ attendees) featuring DAAD scholars and industry experts. Spearheaded the editorial launch of <em>BYTE THE NEWS</em> — the branch's inaugural tech publication, covering 5G and emerging technologies.</p>
+            <p class="tl-desc">Directed the IEEE Week &amp; PES seminar series attracting <strong>300+ attendees</strong>, featuring DAAD scholars and senior industry experts. Managed programme budgets, logistics, and external communications. Spearheaded the editorial launch of <em>BYTE THE NEWS</em> — the branch's inaugural technical publication covering 5G, AI, and emerging engineering trends.</p>
+            <div class="tl-metrics">
+              <span class="metric">300+ Attendees</span>
+              <span class="metric">BYTE THE NEWS</span>
+              <span class="metric">DAAD Scholars</span>
+            </div>
           </div>
         </div>
 
@@ -385,12 +304,35 @@
           <div class="tl-dot">🚀</div>
           <div class="tl-card">
             <div class="tl-head">
-              <h3 class="tl-title">Campus Manager — UIHP Smart Unibator</h3>
-              <span class="tl-pill">Entrepreneurship</span>
+              <h3 class="tl-title">Campus Manager — UIHP Smart Unibator, BRAC University</h3>
+              <span class="tl-pill">Completed</span>
             </div>
-            <p class="tl-org">BRAC University · World Bank / BHTPA / CED Partnership</p>
+            <p class="tl-org">BRAC University · World Bank / BHTPA / CED</p>
             <p class="tl-period">Mar 2024 — Aug 2024</p>
-            <p class="tl-desc">Government &amp; international liaison: represented BRAC University in high-profile entrepreneurship initiatives with the World Bank, BHTPA, and CED. Coordinated 200+ participant workshops and secured BDT 50,000 pre-seed funding with Project Kaizen (3rd place, UIHP Startup Competition).</p>
+            <p class="tl-desc">Government &amp; international liaison: represented BRAC University in high-profile entrepreneurship initiatives partnered with the <strong>World Bank, BHTPA, and CED</strong>, ensuring full compliance with international programme standards. Coordinated participant engagement for large-scale workshops (200+ participants), bridging student innovators with government-backed funding bodies. Secured BDT 50,000 pre-seed funding by placing 3rd in the UIHP Startup Competition with Project Kaizen.</p>
+            <div class="tl-metrics">
+              <span class="metric">World Bank</span>
+              <span class="metric">200+ Participants</span>
+              <span class="metric">BHTPA · CED</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="tl-item reveal">
+          <div class="tl-dot">💡</div>
+          <div class="tl-card">
+            <div class="tl-head">
+              <h3 class="tl-title">Founder &amp; CEO — Project Kaizen</h3>
+              <span class="tl-pill">Completed</span>
+            </div>
+            <p class="tl-org">UIHP Startup Competition · Bangladesh ICT Division</p>
+            <p class="tl-period">Mar 2024 — Nov 2024</p>
+            <p class="tl-desc">Founded, developed, and pitched a tech startup under the UIHP Smart Unibator incubation programme. Secured <strong>BDT 50,000 seed funding</strong> (3rd place nationally). Delivered a formal pitch before a <strong>Bangladesh ICT Division jury panel</strong>, showcasing KPI design, innovation roadmap, and commercial viability. Awarded <strong>Best Executive</strong> at Entrepreneur's Fest 3.0.</p>
+            <div class="tl-metrics">
+              <span class="metric">BDT 50,000 Raised</span>
+              <span class="metric">3rd Place National</span>
+              <span class="metric">Best Executive Award</span>
+            </div>
           </div>
         </div>
 
@@ -399,259 +341,379 @@
   </section>
 
 
-  <!-- ===================== TUITIONS ===================== -->
-  <section id="tuitions" class="section section-alt">
+  <!-- RESEARCH & PROJECTS -->
+  <section id="research" class="section">
     <div class="container">
       <div class="section-head">
-        <span class="section-tag">// 04. tuitions</span>
-        <h2 class="section-title reveal">I teach, too</h2>
-        <p class="section-desc reveal">Clear explanations, practical examples, and focused one-on-one sessions.</p>
+        <span class="section-tag">// 03. research &amp; projects</span>
+        <h2 class="section-title reveal">Research &amp; Projects</h2>
+        <p class="section-desc reveal">Active research interests and technical work. Projects and papers added as they develop.</p>
       </div>
+      <div class="research-grid">
 
-      <div class="tuition-grid">
-
-        <div class="tuition-card reveal">
-          <div class="tc-icon">⚡</div>
-          <h3 class="tc-title">Physics</h3>
-          <p class="tc-level">SSC · HSC · University Level</p>
-          <p class="tc-desc">Mechanics, Electricity, Magnetism, Optics, and Modern Physics with strong conceptual foundations and exam-focused problem solving.</p>
-          <ul class="tc-list">
-            <li>Newtonian Mechanics</li>
-            <li>Electrostatics &amp; Circuits</li>
-            <li>Wave &amp; Optics</li>
-            <li>Quantum Basics</li>
-          </ul>
-          <a href="#contact" class="btn btn-outline btn-sm-full">Book a Session</a>
+        <div class="research-card rc-real reveal">
+          <div class="rc-status-pill rc-live">● Active Research</div>
+          <div class="rc-icon">⚡</div>
+          <h3 class="rc-title">National Grid Stability &amp; Renewable Integration</h3>
+          <p class="rc-desc">Investigating stability challenges in Bangladesh's national power grid under increasing renewable energy penetration, with access to BPDB and SREDA operational context.</p>
+          <div class="proj-tags"><span class="tag">Power Systems</span><span class="tag">PSCAD</span><span class="tag">Renewable Energy</span><span class="tag">BPDB</span></div>
         </div>
 
-        <div class="tuition-card tuition-card-hot reveal">
-          <div class="tc-hot-label">Most Popular</div>
-          <div class="tc-icon">📐</div>
-          <h3 class="tc-title">Mathematics</h3>
-          <p class="tc-level">SSC · HSC · University Level</p>
-          <p class="tc-desc">Algebra, Calculus, Differential Equations, and Numerical Methods with step-by-step problem solving and exam strategy.</p>
-          <ul class="tc-list">
-            <li>Calculus I &amp; II</li>
-            <li>Differential Equations</li>
-            <li>Linear Algebra</li>
-            <li>Complex Numbers</li>
-          </ul>
-          <a href="#contact" class="btn btn-primary btn-sm-full">Book a Session</a>
+        <div class="research-card rc-real reveal">
+          <div class="rc-status-pill rc-live">● Active Research</div>
+          <div class="rc-icon">🤖</div>
+          <h3 class="rc-title">AI Applications in Signal Processing &amp; 5G Networks</h3>
+          <p class="rc-desc">Exploring ML models for signal classification and interference mitigation in 5G architecture. Early findings published in <em>BYTE THE NEWS</em>, IEEE BRAC's inaugural tech publication.</p>
+          <div class="proj-tags"><span class="tag">AI / ML</span><span class="tag">5G</span><span class="tag">Signal Processing</span><span class="tag">IEEE</span></div>
         </div>
 
-        <div class="tuition-card reveal">
-          <div class="tc-icon">🔌</div>
-          <h3 class="tc-title">EEE Core Subjects</h3>
-          <p class="tc-level">University Level</p>
-          <p class="tc-desc">Circuit theory, electronics, signals &amp; systems, and microcontroller programming for university EEE/CSE students.</p>
-          <ul class="tc-list">
-            <li>Circuit Analysis (KVL/KCL)</li>
-            <li>Electronic Devices</li>
-            <li>Signals &amp; Systems</li>
-            <li>Microcontrollers (AVR)</li>
-          </ul>
-          <a href="#contact" class="btn btn-outline btn-sm-full">Book a Session</a>
+        <div class="research-card rc-real reveal">
+          <div class="rc-status-pill rc-live">● Active Interest</div>
+          <div class="rc-icon">🔬</div>
+          <h3 class="rc-title">VLSI Design &amp; Semiconductor Architecture</h3>
+          <p class="rc-desc">Studying VLSI methodologies and next-generation semiconductor design through IEEE CS BDC's national technical programme and Ulkasemi's campus ecosystem.</p>
+          <div class="proj-tags"><span class="tag">VLSI</span><span class="tag">Semiconductors</span><span class="tag">Ulkasemi</span><span class="tag">CMOS</span></div>
         </div>
 
-      </div>
-
-      <div class="tuition-note reveal">
-        <span class="tn-icon">💬</span>
-        <div>
-          <!-- ✏️ Update availability details -->
-          <strong>Available online &amp; in-person (Dhaka area)</strong><br />
-          Flexible scheduling, one-on-one sessions. Contact me to discuss your needs and we'll arrange what works best for you.
+        <div class="research-card rc-placeholder reveal">
+          <div class="rc-status-pill rc-soon">+ Upcoming</div>
+          <div class="rc-icon">📁</div>
+          <h3 class="rc-title">More Projects Loading…</h3>
+          <p class="rc-desc">Technical coursework, lab projects, and research papers will be published here as completed. Currently in Year 1 at BRAC University — building the foundation.</p>
+          <div class="proj-tags"><span class="tag">In Progress</span></div>
         </div>
+
       </div>
     </div>
   </section>
 
 
-  <!-- ===================== BLOG ===================== -->
+  <!-- CERTIFICATIONS -->
+  <section id="certifications" class="section section-alt">
+    <div class="container">
+      <div class="section-head">
+        <span class="section-tag">// 04. certifications &amp; awards</span>
+        <h2 class="section-title reveal">Certifications &amp; Awards</h2>
+        <p class="section-desc reveal">Academic achievements, awards, and professional certifications.</p>
+      </div>
+      <div class="certs-grid">
+
+        <div class="cert-card reveal">
+          <div class="cert-icon">🏆</div>
+          <h4 class="cert-title">3rd Place — UIHP Startup Competition</h4>
+          <p class="cert-issuer">UIHP · Smart Unibator · BDT 50,000 Seed Funding</p>
+          <span class="cert-year">2024</span>
+        </div>
+
+        <div class="cert-card reveal">
+          <div class="cert-icon">🌟</div>
+          <h4 class="cert-title">Best Executive Award</h4>
+          <p class="cert-issuer">Entrepreneur's Fest 3.0</p>
+          <span class="cert-year">2024</span>
+        </div>
+
+        <div class="cert-card reveal">
+          <div class="cert-icon">🎖️</div>
+          <h4 class="cert-title">Head of Star Management</h4>
+          <p class="cert-issuer">BRAC University Entrepreneurship Development Forum</p>
+          <span class="cert-year">2024</span>
+        </div>
+
+        <!-- Duplicate and fill these with your real certificates -->
+        <div class="cert-card cert-add reveal">
+          <div class="cert-icon">➕</div>
+          <h4 class="cert-title">Add Certificate</h4>
+          <p class="cert-issuer">Duplicate this card, add your cert image to assets/ and link it here</p>
+          <span class="cert-year">—</span>
+        </div>
+
+        <div class="cert-card cert-add reveal">
+          <div class="cert-icon">➕</div>
+          <h4 class="cert-title">Add Certificate</h4>
+          <p class="cert-issuer">Duplicate this card, add your cert image to assets/ and link it here</p>
+          <span class="cert-year">—</span>
+        </div>
+
+        <div class="cert-card cert-add reveal">
+          <div class="cert-icon">➕</div>
+          <h4 class="cert-title">Add Certificate</h4>
+          <p class="cert-issuer">Duplicate this card, add your cert image to assets/ and link it here</p>
+          <span class="cert-year">—</span>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- BLOG -->
   <section id="blog" class="section">
     <div class="container">
       <div class="section-head">
         <span class="section-tag">// 05. blog</span>
         <h2 class="section-title reveal">From the journal</h2>
-        <p class="section-desc reveal">Thoughts on engineering, student life, and things I find interesting.</p>
+        <p class="section-desc reveal">Engineering perspectives on AI, cybersecurity, power systems, and leading in the technical age.</p>
       </div>
-
       <div class="blog-grid">
 
-        <!-- ✏️ Update with your real blog posts -->
         <article class="blog-card blog-featured reveal">
           <div class="blog-meta">
-            <span class="blog-tag">Engineering</span>
+            <span class="blog-tag">AI · Power Systems</span>
+            <span class="blog-time">6 min read</span>
+          </div>
+          <h3 class="blog-title">AI-Driven Smart Grids: How Machine Learning Is Reshaping Bangladesh's Energy Future</h3>
+          <p class="blog-excerpt">The national grid is no longer just a hardware problem — it's a data problem. Here's my perspective on how AI-driven predictive systems, combined with renewable energy integration, could fundamentally transform how Bangladesh manages its power infrastructure over the next decade.</p>
+          <div class="blog-foot">
+            <span class="blog-date">Apr 10, 2025</span>
+            <a href="#" class="blog-link">Read more →</a>
+          </div>
+        </article>
+
+        <article class="blog-card reveal">
+          <div class="blog-meta">
+            <span class="blog-tag">VLSI · Semiconductors</span>
             <span class="blog-time">5 min read</span>
           </div>
-          <h3 class="blog-title">How I Built My First PCB (and What Went Wrong)</h3>
-          <p class="blog-excerpt">A candid walkthrough of designing my first PCB in KiCad — the mistakes I made, the reruns at the fab, and the final working board.</p>
+          <h3 class="blog-title">VLSI in 2025: Why Every EEE Student Must Understand Semiconductor Architecture</h3>
+          <p class="blog-excerpt">The chip shortage changed everything. VLSI is no longer a niche specialisation — it's foundational knowledge for any engineer who wants to stay relevant in the AI hardware era. Here's why.</p>
           <div class="blog-foot">
-            <span class="blog-date">Jan 15, 2025</span>
-            <!-- ✏️ Link to your actual blog post page -->
-            <a href="blog/first-pcb.html" class="blog-link">Read more →</a>
+            <span class="blog-date">Mar 5, 2025</span>
+            <a href="#" class="blog-link">Read more →</a>
           </div>
         </article>
 
         <article class="blog-card reveal">
           <div class="blog-meta">
-            <span class="blog-tag">Tips</span>
-            <span class="blog-time">3 min read</span>
-          </div>
-          <h3 class="blog-title">5 Resources Every EEE Student Needs</h3>
-          <p class="blog-excerpt">From simulation tools to YouTube channels — the resources that genuinely helped me survive first year.</p>
-          <div class="blog-foot">
-            <span class="blog-date">Dec 20, 2024</span>
-            <a href="blog/eee-resources.html" class="blog-link">Read more →</a>
-          </div>
-        </article>
-
-        <article class="blog-card reveal">
-          <div class="blog-meta">
-            <span class="blog-tag">Learning</span>
+            <span class="blog-tag">Cybersecurity</span>
             <span class="blog-time">4 min read</span>
           </div>
-          <h3 class="blog-title">Fourier Transforms — Simply Explained</h3>
-          <p class="blog-excerpt">Breaking down one of the most important DSP concepts with simple analogies and zero fear-inducing mathematics.</p>
+          <h3 class="blog-title">Cybersecurity in Critical Infrastructure: The Engineering Threat We Can't Ignore</h3>
+          <p class="blog-excerpt">Power grids, water systems, and telecom networks are primary cyberattack targets. As engineers building this infrastructure, we have a responsibility to design for security from day one — not bolt it on later.</p>
           <div class="blog-foot">
-            <span class="blog-date">Nov 10, 2024</span>
-            <a href="blog/fourier.html" class="blog-link">Read more →</a>
+            <span class="blog-date">Feb 18, 2025</span>
+            <a href="#" class="blog-link">Read more →</a>
           </div>
         </article>
 
       </div>
       <div class="section-cta reveal">
-        <a href="blog/index.html" class="btn btn-outline">View All Posts →</a>
+        <a href="#" class="btn btn-outline">View All Posts →</a>
       </div>
     </div>
   </section>
 
 
-  <!-- ===================== CONTACT ===================== -->
+  <!-- TUITIONS CTA -->
+  <section id="tuitions" class="section section-alt">
+    <div class="container">
+      <div class="tuitions-cta reveal">
+        <div class="tc-left">
+          <span class="section-tag">// academic coaching</span>
+          <h2 class="tc-title">World-Class Academic Coaching</h2>
+          <p class="tc-desc">
+            36+ months of teaching experience across <strong>Edexcel, Cambridge,</strong> and <strong>IB</strong> curricula.
+            Taught at Sir John Wilson School, Scholastica, and Aga Khan School.
+            International students from <strong>Norway and the UK.</strong>
+            Backed by <strong>6 A* O Levels, 3 A Level As,</strong> and a <strong>3.8 CGPA</strong> at BRAC University.
+          </p>
+          <div class="tc-pills">
+            <span class="subj-pill">Physics</span><span class="subj-pill">Mathematics</span>
+            <span class="subj-pill">Chemistry</span><span class="subj-pill">Biology</span>
+            <span class="subj-pill">English</span><span class="subj-pill">Economics</span>
+            <span class="subj-pill">ICT</span><span class="subj-pill">O Levels</span>
+            <span class="subj-pill">A Levels</span><span class="subj-pill">IB</span>
+          </div>
+          <a href="tuitions.html" class="btn btn-primary" style="margin-top:28px;display:inline-flex">
+            Explore Tuition Services ↗
+          </a>
+        </div>
+        <div class="tc-right">
+          <div class="tc-stat-box">
+            <div class="tc-stat"><span class="tc-num">36+</span><span class="tc-lbl">Months Experience</span></div>
+            <div class="tc-stat"><span class="tc-num">3</span><span class="tc-lbl">Curricula Taught</span></div>
+            <div class="tc-stat"><span class="tc-num">6A*</span><span class="tc-lbl">O Level Results</span></div>
+            <div class="tc-stat"><span class="tc-num">3As</span><span class="tc-lbl">A Level Results</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- HIRE ME -->
+  <section id="hire" class="section">
+    <div class="container">
+      <div class="hire-wrap reveal">
+        <div class="hire-left">
+          <span class="section-tag">// open to opportunities</span>
+          <h2 class="hire-title">Let's Build Something Together</h2>
+          <p class="hire-desc">
+            Actively seeking internships, graduate programmes, and research collaborations with forward-thinking organisations.
+            If you're operating at the intersection of energy, AI, semiconductors, financial technology, or large-scale infrastructure — I want to be part of it.
+          </p>
+          <div class="hire-roles">
+            <div class="hire-role">
+              <span class="hr-icon">⚡</span>
+              <div>
+                <strong>Engineering Roles</strong>
+                <p>Power systems, renewable energy, embedded systems, circuit &amp; network engineering</p>
+              </div>
+            </div>
+            <div class="hire-role">
+              <span class="hr-icon">🏢</span>
+              <div>
+                <strong>Management &amp; Strategy</strong>
+                <p>MNC management trainee, technical programme management, rotational analyst roles</p>
+              </div>
+            </div>
+            <div class="hire-role">
+              <span class="hr-icon">🔬</span>
+              <div>
+                <strong>Research Positions</strong>
+                <p>Power systems, AI in telecom, VLSI semiconductor design, cybersecurity in infrastructure</p>
+              </div>
+            </div>
+            <div class="hire-role">
+              <span class="hr-icon">💹</span>
+              <div>
+                <strong>Finance &amp; Consulting</strong>
+                <p>Energy sector analysis, technology consulting, innovation advisory, project finance</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="hire-right">
+          <div class="hire-card">
+            <h3 class="hire-card-h">What I Bring</h3>
+            <ul class="hire-list">
+              <li><span>🎓</span><div><strong>3.8 CGPA</strong> in EEE at BRAC University</div></li>
+              <li><span>🌍</span><div><strong>World Bank programme</strong> management experience</div></li>
+              <li><span>👥</span><div>Led <strong>50+ volunteer teams</strong> at national scale</div></li>
+              <li><span>💡</span><div><strong>Startup founder</strong> — BDT 50,000 seed funded, ICT Division pitch</div></li>
+              <li><span>🏛️</span><div>Stakeholder relations: <strong>BPDB, DESCO, SREDA, Ulkasemi</strong></div></li>
+              <li><span>📡</span><div>Active research: <strong>AI, VLSI, Power Systems, 5G</strong></div></li>
+              <li><span>🌐</span><div>International exposure — <strong>Norway &amp; UK</strong> student networks</div></li>
+              <li><span>📋</span><div>O Levels: <strong>6 A*</strong> · A Levels: <strong>3 As</strong></div></li>
+            </ul>
+            <a href="mailto:rayadh.abrar01@gmail.com" class="btn btn-primary btn-block" style="margin-top:20px">
+              Get In Touch →
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- CONTACT -->
   <section id="contact" class="section section-alt">
     <div class="container">
       <div class="section-head">
         <span class="section-tag">// 06. contact</span>
         <h2 class="section-title reveal">Let's connect</h2>
-        <p class="section-desc reveal">For collaborations, tuition bookings, or just a good engineering conversation.</p>
+        <p class="section-desc reveal">For hiring enquiries, research collaborations, IEEE partnerships, or tuition bookings.</p>
       </div>
-
       <div class="contact-grid">
-
         <div class="contact-info reveal">
           <div class="ci-item">
             <span class="ci-icon">📧</span>
-            <div>
-              <p class="ci-label">Email</p>
-              <a href="mailto:rayadh.abrar01@gmail.com" class="ci-val">rayadh.abrar01@gmail.com</a>
-            </div>
+            <div><p class="ci-label">Email</p><a href="mailto:rayadh.abrar01@gmail.com" class="ci-val">rayadh.abrar01@gmail.com</a></div>
           </div>
           <div class="ci-item">
             <span class="ci-icon">📍</span>
-            <div>
-              <p class="ci-label">Location</p>
-              <!-- ✏️ Your location -->
-              <p class="ci-val">Dhaka, Bangladesh</p>
-            </div>
+            <div><p class="ci-label">Location</p><p class="ci-val">Dhaka, Bangladesh (Gulshan-2)</p></div>
           </div>
           <div class="ci-item">
             <span class="ci-icon">🕐</span>
-            <div>
-              <p class="ci-label">Response Time</p>
-              <p class="ci-val">Within 24 hours</p>
-            </div>
+            <div><p class="ci-label">Response Time</p><p class="ci-val">Within 24 hours</p></div>
           </div>
-
+          <div class="ci-item">
+            <span class="ci-icon">💼</span>
+            <div><p class="ci-label">Availability</p><p class="ci-val" style="color:var(--accent)">● Open to Opportunities</p></div>
+          </div>
           <div class="socials">
             <a href="https://linkedin.com/in/rayadh-abrar" target="_blank" rel="noopener" class="social-btn">
-              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
               LinkedIn
             </a>
-            <!-- ✏️ Add your GitHub username when ready -->
-            <a href="https://github.com/" target="_blank" rel="noopener" class="social-btn">
-              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg>
-              GitHub
-            </a>
             <a href="mailto:rayadh.abrar01@gmail.com" class="social-btn">
-              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
               Email
             </a>
           </div>
-        </div><!-- /.contact-info -->
-
-        <!--
-          ✏️ CONTACT FORM SETUP:
-          This form is wired to Formspree. To activate:
-          1. Go to https://formspree.io and create a free account
-          2. Create a new form — copy your Form ID
-          3. Replace "YOUR_FORM_ID" in main.js with your actual ID
-        -->
+        </div>
         <form class="contact-form reveal" id="contactForm" novalidate>
           <div class="form-row">
             <div class="form-group">
-              <label for="fname" class="form-lbl">Your Name</label>
-              <input type="text" id="fname" name="name" class="form-inp" placeholder="e.g. Rahman Islam" required />
+              <label for="fname" class="form-lbl">Full Name</label>
+              <input type="text" id="fname" name="name" class="form-inp" placeholder="Your full name" required />
             </div>
             <div class="form-group">
-              <label for="femail" class="form-lbl">Your Email</label>
-              <input type="email" id="femail" name="email" class="form-inp" placeholder="you@email.com" required />
+              <label for="femail" class="form-lbl">Email Address</label>
+              <input type="email" id="femail" name="email" class="form-inp" placeholder="you@company.com" required />
             </div>
+          </div>
+          <div class="form-group">
+            <label for="forg" class="form-lbl">Organisation</label>
+            <input type="text" id="forg" name="organisation" class="form-inp" placeholder="Company / University / Institute" />
           </div>
           <div class="form-group">
             <label for="fsubject" class="form-lbl">Subject</label>
             <select id="fsubject" name="subject" class="form-inp form-sel">
               <option value="">Select a topic…</option>
-              <option value="tuition">Tuition Inquiry</option>
-              <option value="project">Project Collaboration</option>
-              <option value="general">General / Say Hi</option>
+              <option value="internship">Internship / Job Opportunity</option>
+              <option value="research">Research Collaboration</option>
+              <option value="ieee">IEEE / Technical Partnership</option>
+              <option value="speaking">Speaking / Panel Invitation</option>
+              <option value="tuition">Tuition / Academic Coaching</option>
+              <option value="startup">Startup / Innovation</option>
+              <option value="general">General Enquiry</option>
             </select>
           </div>
           <div class="form-group">
             <label for="fmessage" class="form-lbl">Message</label>
-            <textarea id="fmessage" name="message" class="form-inp form-ta" rows="5" placeholder="Tell me what you have in mind…" required></textarea>
+            <textarea id="fmessage" name="message" class="form-inp form-ta" rows="5" placeholder="Tell me about the opportunity or what you have in mind…" required></textarea>
           </div>
           <button type="submit" class="btn btn-primary btn-block" id="submitBtn">
             <span id="btnLabel">Send Message</span>
-            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
           </button>
-          <p class="form-note" id="formNote">⚡ I usually reply within 24 hours.</p>
+          <p class="form-note" id="formNote">⚡ I reply within 24 hours.</p>
         </form>
-
       </div>
     </div>
   </section>
 
 
-  <!-- ===================== FOOTER ===================== -->
+  <!-- FOOTER -->
   <footer class="footer">
     <div class="container">
       <div class="footer-top">
         <div>
-          <a href="#hero" class="nav-logo">
-            <span class="logo-bolt">⚡</span>
-            <span>Rayadh Abrar</span>
-          </a>
-          <p class="footer-sub">EEE Undergrad · IEEE Leader · Researcher</p>
+          <a href="#hero" class="nav-logo"><span class="logo-bolt">⚡</span><span>Rayadh Abrar</span></a>
+          <p class="footer-sub">EEE @ BRAC University · IEEE Chairperson · Available for Hire</p>
         </div>
         <div class="footer-nav-wrap">
           <div class="footer-nav">
             <h4 class="footer-nav-head">Navigate</h4>
             <a href="#about">About</a>
-            <a href="#projects">Projects</a>
-            <a href="#extracurriculars">Activities</a>
-            <a href="#tuitions">Tuitions</a>
+            <a href="#experience">Experience</a>
+            <a href="#research">Research</a>
+            <a href="#certifications">Certifications</a>
             <a href="#blog">Blog</a>
+            <a href="tuitions.html">Tuitions</a>
           </div>
           <div class="footer-nav">
             <h4 class="footer-nav-head">Connect</h4>
             <a href="https://linkedin.com/in/rayadh-abrar" target="_blank" rel="noopener">LinkedIn</a>
-            <a href="https://github.com/" target="_blank" rel="noopener">GitHub</a>
             <a href="mailto:rayadh.abrar01@gmail.com">Email</a>
+            <a href="assets/Rayadh%20Abrar%27s%20Resume.pdf" target="_blank">Resume PDF</a>
+            <a href="tuitions.html">Tutoring Services</a>
           </div>
         </div>
       </div>
       <div class="footer-bottom">
-        <p>© 2025 Rayadh Abrar · Designed &amp; coded with ⚡</p>
+        <p>© 2025 Rayadh Abrar · EEE @ BRAC University · IEEE #100291890</p>
         <a href="#hero" class="back-top">↑ Top</a>
       </div>
     </div>
