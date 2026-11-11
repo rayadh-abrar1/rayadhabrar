@@ -1,6 +1,7 @@
-# ⚡ YOUR NAME — Personal Portfolio
+# ⚡ Rayadh Abrar — Personal Portfolio
 > EEE Student Portfolio · Built with HTML, CSS & Vanilla JS
 
+How I made it:
 ---
 
 ## 🚀 Live in 5 Minutes (GitHub Pages — Free)
