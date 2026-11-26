@@ -193,3 +193,32 @@ h3, h4 { line-height: 1.28; }
   .wrap { width: 100%; }
   .entry, figure { break-inside: avoid; }
 }
+
+/* Impact numbers, photo grid, stage log */
+.stats-section { padding-block: clamp(3rem, 6vw, 5.5rem); background: var(--navy-deep); color: white; }
+.stats-section .eyebrow { color: #a8d1e4; }
+.stat-grid { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 1px; padding: 0; margin: 0; list-style: none; background: #2c4a62; border: 1px solid #2c4a62; }
+.stat-grid li { background: var(--navy-deep); padding: 1.4rem 1.3rem 1.5rem; }
+.stat-grid strong { display: block; font: 400 clamp(2.6rem, 5vw, 3.8rem)/1 var(--serif); letter-spacing: -.05em; }
+.stat-grid li > span { display: block; margin-top: .55rem; font-weight: 700; color: #e6f1f7; }
+.stat-grid p { margin-top: .35rem; color: #b6cddb; font-size: .9rem; line-height: 1.5; }
+.photo-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: .85rem; margin-top: 1.05rem; }
+.photo-grid img { width: 100%; height: auto; aspect-ratio: 1.5; object-fit: cover; background: var(--mist); }
+.photo-grid figcaption { color: var(--body); font-size: .82rem; margin-top: .3rem; }
+.stage-log { margin-top: 2.2rem; border-top: 3px solid var(--accent); padding-top: 1.2rem; }
+.stage-log h3 { font-size: 1.13rem; margin-bottom: .6rem; }
+.stage-log ul { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 0 2rem; padding: 0; margin: 0; list-style: none; }
+.stage-log li { padding: .55rem 0; border-bottom: 1px solid var(--line); color: var(--body); }
+.stage-log li span { display: block; color: var(--accent); font-size: .8rem; font-weight: 750; letter-spacing: .06em; text-transform: uppercase; }
+/* Draft placeholders: remove the class once each figure is confirmed */
+.tbc { outline: 2px dashed #e0a100; outline-offset: 2px; }
+@media (max-width: 58rem) { .stat-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+@media (max-width: 42rem) { .photo-grid, .stage-log ul { grid-template-columns: 1fr; } }
+.rating-summary { color: var(--body); font-weight: 650; }
+.rating-stars, .review-stars { color: #b37000; letter-spacing: .08em; }
+.review-list { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 1rem; }
+.review-card { padding: 1.4rem; border-top: 2px solid #33738a; background: var(--mist); }
+.review-card blockquote { margin: .6rem 0 .8rem; color: var(--ink); }
+.review-by { color: var(--accent); font-size: .88rem; font-weight: 700; }
+.review-empty { grid-column: 1 / -1; color: var(--body); padding: 1.2rem; border: 1px dashed #b8c8d2; }
+@media (max-width: 58rem) { .review-list { grid-template-columns: 1fr; } }
