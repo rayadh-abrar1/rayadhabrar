@@ -243,3 +243,5 @@ h3, h4 { line-height: 1.28; }
 @media (max-width: 42rem) { .beyond-grid { grid-template-columns: 1fr; } }
 .chess-mark { display: grid; place-items: center; aspect-ratio: 4 / 3; margin-bottom: .8rem; background: var(--navy-deep); color: white; font-size: 6rem; line-height: 1; }
 .photo-grid .wide.natural img { aspect-ratio: auto; }
+.post-quote { margin: 1rem 0 0; padding: .9rem 1.1rem; border-left: 3px solid var(--accent); background: var(--mist); color: var(--body); font-style: italic; }
+.post-quote cite { display: block; margin-top: .45rem; font-style: normal; font-size: .82rem; }
