@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'none'; base-uri 'none'; script-src 'self'; style-src 'self'; connect-src 'self'; form-action 'none'">
+  <meta name="referrer" content="no-referrer">
+  <meta name="robots" content="noindex, nofollow">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Review approvals</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="admin.js" defer></script>
+</head>
+<body>
+  <main class="section wrap admin" id="main">
+    <h1>Review approvals</h1>
+    <form id="login" class="reviews-form">
+      <label for="token">Admin password</label>
+      <input id="token" type="password" autocomplete="current-password" required>
+      <button class="button button-primary" type="submit">Show reviews</button>
+      <p class="form-status" role="status" id="admin-status"></p>
+    </form>
+    <div id="admin-list" class="admin-list"></div>
+  </main>
+</body>
+</html>

@@ -1,8 +1,8 @@
 # Rayadh Abrar
 
-[Portfolio](https://rayadh-abrar1.github.io/rayadhabrar/) · [Tutoring](https://rayadh-abrar1.github.io/rayadhabrar/tuitions.html)
+[Portfolio](https://rayadhabrar.pages.dev/) · [Tutoring](https://rayadhabrar.pages.dev/tuitions.html)
 
-This repository serves a static website from the root of the `main` branch on GitHub Pages. It uses plain HTML, CSS and JavaScript with no install or build step.
+This repository serves a static website from the root of the `main` branch on Cloudflare Pages (free plan) at https://rayadhabrar.pages.dev. GitHub Pages still serves a copy whose canonical tags point to Cloudflare. It uses plain HTML, CSS and JavaScript with no install or build step.
 
 ## Preview locally
 
@@ -14,7 +14,11 @@ Open [the local preview](http://127.0.0.1:8080/). The profile and timeline are i
 
 ## Tutoring reviews
 
-The form encodes the rating and feedback into an email draft. The reviewer sends the draft from their email app. Feedback arrives by email and is reviewed before any publication. There is no public posting endpoint or client-side database.
+The review form posts to `/api/reviews`, a Cloudflare Pages Function in `functions/`. New reviews are stored as pending in the `REVIEWS` KV namespace and appear on the tutoring page only after approval at `/admin.html`, which asks for the `ADMIN_TOKEN` secret set in the Cloudflare dashboard. Where no API exists (GitHub Pages, local preview), the form falls back to an email draft. Reviews written directly into `tuitions.html` always show.
+
+## Search
+
+Canonical URLs, Open Graph tags, JSON-LD (`Person`, `WebSite`, `Service`), `sitemap.xml` and `robots.txt` all use `https://rayadhabrar.pages.dev`. If the address changes, replace it across the repository.
 
 ## Security
 
