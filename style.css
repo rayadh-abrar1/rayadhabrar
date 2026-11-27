@@ -66,7 +66,7 @@ h3, h4 { line-height: 1.28; }
 .hero-figure figcaption span:first-child { color: white; }
 
 .profile-strip { background: var(--mist); border-bottom: 1px solid var(--line); }
-.profile-facts { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); padding-block: 1.45rem; }
+.profile-facts { display: grid; grid-template-columns: repeat(auto-fit, minmax(12rem, 1fr)); padding-block: 1.45rem; }
 .profile-facts > div { display: grid; gap: .2rem; padding: .2rem 1.3rem; border-left: 1px solid #c9d7df; }
 .profile-facts > div:first-child { border-left: 0; padding-left: 0; }
 .profile-facts span { font-size: .84rem; color: var(--accent); font-weight: 750; }
@@ -230,3 +230,9 @@ h3, h4 { line-height: 1.28; }
 .grade-list strong { font: 400 clamp(1.6rem, 3vw, 2.3rem)/1.1 var(--serif); }
 .tutor-details { row-gap: 2.6rem; }
 @media (max-width: 42rem) { .grade-list { grid-template-columns: 1fr; } }
+.photo-grid .wide { grid-column: 1 / -1; }
+.photo-grid .wide img { aspect-ratio: 16 / 9; }
+.event-photo.small { max-width: 20rem; }
+.speaking-side { display: grid; gap: 1rem; align-content: start; }
+.speaking-side .event-photo img { aspect-ratio: 1; object-fit: cover; }
+.project-figure { width: 100%; height: auto; margin-top: 1rem; border: 1px solid var(--line); }
