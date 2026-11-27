@@ -250,3 +250,5 @@ h3, h4 { line-height: 1.28; }
 .admin .reviews-form input[type="password"] { display: block; width: 100%; max-width: 24rem; padding: .55rem .7rem; border: 1px solid #839aab; font: inherit; }
 .admin-list { display: grid; gap: 1rem; margin-top: 2rem; }
 .admin-actions { display: flex; gap: .6rem; margin-top: .8rem; }
+.post-quote { margin: 1rem 0 0; padding: .9rem 1.1rem; border-left: 3px solid var(--accent); background: var(--mist); color: var(--body); font-style: italic; }
+.post-quote cite { display: block; margin-top: .45rem; font-style: normal; font-size: .82rem; }
