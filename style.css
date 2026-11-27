@@ -222,3 +222,11 @@ h3, h4 { line-height: 1.28; }
 .review-by { color: var(--accent); font-size: .88rem; font-weight: 700; }
 .review-empty { grid-column: 1 / -1; color: var(--body); padding: 1.2rem; border: 1px dashed #b8c8d2; }
 @media (max-width: 58rem) { .review-list { grid-template-columns: 1fr; } }
+.project-slot { border-top-style: dashed; background: transparent; outline: 1px dashed #b8c8d2; }
+.tutor-details > article { min-width: 0; }
+.grade-list { display: grid; grid-template-columns: repeat(2, minmax(0,1fr)); gap: .8rem; padding: 0; margin: .8rem 0; list-style: none; }
+.grade-list li { padding: 1rem; background: white; border-top: 2px solid var(--accent); }
+.grade-list span { display: block; color: var(--accent); font-size: .82rem; font-weight: 750; text-transform: uppercase; letter-spacing: .08em; }
+.grade-list strong { font: 400 clamp(1.6rem, 3vw, 2.3rem)/1.1 var(--serif); }
+.tutor-details { row-gap: 2.6rem; }
+@media (max-width: 42rem) { .grade-list { grid-template-columns: 1fr; } }
