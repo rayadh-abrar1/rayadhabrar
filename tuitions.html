@@ -2,12 +2,52 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <meta http-equiv="Content-Security-Policy" content="default-src 'none'; base-uri 'none'; script-src 'self'; style-src 'self'; img-src 'self'; form-action 'none'">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'none'; base-uri 'none'; script-src 'self'; style-src 'self'; img-src 'self'; connect-src 'self'; form-action 'none'">
   <meta name="referrer" content="no-referrer">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Private Tutoring | Rayadh Abrar</title>
   <meta name="description" content="Maths, physics and chemistry tutoring with Rayadh Abrar in Gulshan, Dhaka and online. Five years of teaching experience across Pearson Edexcel, Cambridge and IB.">
+  <meta name="author" content="Rayadh Abrar">
   <link rel="canonical" href="https://rayadh-abrar1.github.io/rayadhabrar/tuitions.html">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Rayadh Abrar">
+  <meta property="og:title" content="Private Tutoring | Rayadh Abrar">
+  <meta property="og:description" content="Maths, physics and chemistry tutoring in Dhaka and online. Five years of experience with Edexcel, Cambridge and IB students.">
+  <meta property="og:url" content="https://rayadh-abrar1.github.io/rayadhabrar/tuitions.html">
+  <meta property="og:image" content="https://rayadh-abrar1.github.io/rayadhabrar/assets/og-image.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image" content="https://rayadh-abrar1.github.io/rayadhabrar/assets/og-image.jpg">
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Service",
+  "name": "Private tutoring with Rayadh Abrar",
+  "serviceType": "Maths, physics and chemistry tutoring",
+  "url": "https://rayadh-abrar1.github.io/rayadhabrar/tuitions.html",
+  "provider": {
+    "@type": "Person",
+    "@id": "https://rayadh-abrar1.github.io/rayadhabrar/#person",
+    "name": "Rayadh Abrar",
+    "url": "https://rayadh-abrar1.github.io/rayadhabrar/"
+  },
+  "areaServed": [
+    {
+      "@type": "City",
+      "name": "Dhaka"
+    },
+    {
+      "@type": "Place",
+      "name": "Online"
+    }
+  ],
+  "audience": {
+    "@type": "EducationalAudience",
+    "educationalRole": "student"
+  }
+}
+  </script>
   <link rel="icon" href="assets/monogram.svg" type="image/svg+xml">
   <link rel="stylesheet" href="style.css">
   <script src="main.js" defer></script>
@@ -76,15 +116,12 @@
         <div><p class="eyebrow">Student reviews</p><h2 id="student-reviews-title">What students say</h2></div>
         <p class="rating-summary" aria-live="polite"><span class="rating-stars" aria-hidden="true">★★★★★</span> <span id="rating-average">No reviews published yet</span></p>
       </div>
-      <!-- Add each approved review as an <article class="review-card" data-rating="5">, copying this layout:
+      <div class="review-list" id="review-list">
         <article class="review-card" data-rating="5">
           <p class="review-stars" aria-label="5 out of 5 stars">★★★★★</p>
-          <blockquote><p>Review text.</p></blockquote>
-          <p class="review-by">A Level student · Physics</p>
+          <blockquote><p>Abrar bhaiya has helped me with Maths, Chemistry, and Physics during my time as an IGCSE student where I was struggling in these subjects. His clear explanations and supportive teaching style made difficult topics much easier to handle and understand. Thanks to his help I have been able to achieve A*’s in all 3 of these subjects. A great tutor for anyone preparing for IGCSEs and even A Levels.</p></blockquote>
+          <p class="review-by">Arish · IGCSE student · Maths, Chemistry &amp; Physics</p>
         </article>
-      -->
-      <div class="review-list" id="review-list">
-        <p class="review-empty">Reviews from students and parents appear here once they’ve been sent in and approved. Be the first to leave one below.</p>
       </div>
     </section>
 
@@ -93,7 +130,7 @@
         <div>
           <p class="eyebrow">Students &amp; parents</p>
           <h2 id="reviews-title">Leave a review</h2>
-          <p>Choose a star rating and tell me what worked well or what I could improve. The form opens an email draft for you to send. I’ll ask before quoting your feedback publicly.</p>
+          <p>Choose a star rating and tell me what worked well or what I could improve. Your review appears on this page once I’ve approved it.</p>
         </div>
         <form class="reviews-form" id="review-form" data-email="rayadhabrar@g.bracu.ac.bd">
           <fieldset>
@@ -106,10 +143,15 @@
               <label><input type="radio" name="rating" value="5" aria-label="5 stars"><span class="star-icon" aria-hidden="true">★</span></label>
             </div>
           </fieldset>
+          <label for="review-name">Your first name <span class="optional">(optional)</span></label>
+          <input id="review-name" name="name" type="text" maxlength="40" autocomplete="given-name">
+          <label for="review-about">Level and subjects <span class="optional">(optional)</span></label>
+          <input id="review-about" name="about" type="text" maxlength="80" placeholder="e.g. IGCSE student · Physics">
           <label for="review-text">Your feedback</label>
           <textarea id="review-text" name="review" rows="4" maxlength="600" required aria-describedby="review-help"></textarea>
           <p class="form-help" id="review-help">Up to 600 characters. Keep student names and other personal details out of the review.</p>
-          <button class="button button-primary" type="submit">Open email draft <span aria-hidden="true">↗</span></button>
+          <div class="hp" aria-hidden="true"><label for="review-website">Leave this empty</label><input id="review-website" name="website" type="text" tabindex="-1" autocomplete="off"></div>
+          <button class="button button-primary" type="submit">Submit review</button>
           <p class="form-status" role="status" id="review-status"></p>
           <noscript><p class="form-help">You can email your rating and feedback to <a href="mailto:rayadhabrar@g.bracu.ac.bd?subject=Tutoring%20review">rayadhabrar@g.bracu.ac.bd</a>.</p></noscript>
         </form>

@@ -1,0 +1,19 @@
+# Cloudflare Pages response headers
+/*
+  X-Content-Type-Options: nosniff
+  Referrer-Policy: no-referrer
+  X-Frame-Options: DENY
+  Content-Security-Policy: frame-ancestors 'none'
+  Permissions-Policy: camera=(), microphone=(), geolocation=()
+
+/assets/*
+  Cache-Control: public, max-age=604800
+
+/admin.html
+  X-Robots-Tag: noindex, nofollow
+
+/functions/*
+  X-Robots-Tag: noindex
+
+/README.md
+  X-Robots-Tag: noindex
